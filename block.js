@@ -15,6 +15,10 @@ class Block {
     Data     : ${this.data.substring(0, 10)}`
   }
 
+  static genesis() {
+    return new this('Genesis time', '-----', 'f1r57-h45h', '')
+  }
+
 }
 
 module.exports = Block
