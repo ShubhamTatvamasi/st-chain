@@ -14,7 +14,7 @@ class Miner {
     validTransactions.push(
       Transaction.rewardTransaction(this.wallet, Wallet.blockchainWallet())
     )
-    const block = this.blockchain.block(validTransactions)
+    const block = this.blockchain.addBlock(validTransactions)
     this.p2pServer.syncChains()
     this.transactionPool.clear()
     this.p2pServer.broadcastClearTransactions()
