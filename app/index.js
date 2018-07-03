@@ -28,7 +28,7 @@ app.post('/mine', (req, res) => {
   res.redirect('/blocks')
 })
 
-app.get('./transactions', (req, res) => {
+app.get('/transactions', (req, res) => {
   res.json(tp.transactions)
 })
 
