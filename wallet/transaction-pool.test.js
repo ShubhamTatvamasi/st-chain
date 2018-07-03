@@ -46,7 +46,7 @@ describe('TransactionPool', () => {
     })
 
     it('grabs valid transactions', () => {
-      expect(tp.validTransaction())
+      expect(tp.validTransactions())
       .toEqual(validTransactions)
     })
   })
